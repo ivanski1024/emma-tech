@@ -1,0 +1,31 @@
+{
+  "name": "emma-tech",
+  "version": "1.0.0",
+  "description": "Test project for Emma Technologies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d dist",
+    "start": "npm run build && node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivanski1024/emma-tech.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ivanski1024/emma-tech/issues"
+  },
+  "homepage": "https://github.com/ivanski1024/emma-tech#readme",
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.5",
+    "@babel/preset-env": "^7.1.5"
+  }
+}
