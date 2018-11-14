@@ -1,0 +1,10 @@
+{
+    "dbConfig": {
+        "host"     : "localhost",
+        "database" : "emmaTechDB"
+    },
+    "trueLayerConfig": {
+        "redirect_uri": "http://localhost:5000/truelayer-redirect",
+        "scopes": ["info", "accounts", "balance", "transactions", "offline_access", "cards"]
+    }
+}

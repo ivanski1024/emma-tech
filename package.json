@@ -2,11 +2,11 @@
   "name": "emma-tech",
   "version": "1.0.0",
   "description": "Test project for Emma Technologies",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel src -d dist",
-    "start": "npm run build && node dist/index.js"
+    "start": "nodemon src/index.js --exec babel-node"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
   "homepage": "https://github.com/ivanski1024/emma-tech#readme",
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
+    "config": "^2.0.1",
     "express": "^4.16.4",
     "morgan": "^1.9.1",
     "mysql": "^2.16.0",
@@ -28,6 +29,8 @@
   "devDependencies": {
     "@babel/cli": "^7.1.5",
     "@babel/core": "^7.1.5",
-    "@babel/preset-env": "^7.1.5"
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.1.5",
+    "nodemon": "^1.18.6"
   }
 }
